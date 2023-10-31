@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> guess my number</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="./GuessGame.css">
+</head>
+<body>
+<header id="header1">
+<button onclick='reset()' id="reset"> Again !</button>
+<h1 id="gmn"> Guess My Number!</h1>
+<p id="Between">(Between 1 and 20)</p>
+</header>
+<div id="qm">?</div>
+<hr>
+<section id="section">
+    <div id="left">
+        <input type="number" id="number" min="1" max="20">
+        <button onclick="guessing()" id="check">Check !</button>
+    </div>
+    <div id="right">
+        <p id="sg">Start guessing....</p>
+        <p id="result"></p>
+        <p id="score"><span><i class="fa-solid fa-bullseye"></i></span> Score:</p>
+        <p id="hscore"><span><i class="fa-solid fa-medal"></i></span> Highscore:</p>
+    </div>
+</section>
+<script src="./GuessGame.js"></script>
+
+</body>
+</html>
