@@ -56,7 +56,9 @@ const rannum=Math.floor(Math.random() *20) +1;
          score=20;
          document.getElementById('result').innerHTML='please check number';
          document.getElementById('score').innerHTML=`score : ${score}`;
+         document.getElementById('qm').innerHTML='?';
          document.getElementsByTagName("body")[0].style.backgroundColor='black';
          document.getElementById('number').style.backgroundColor='black'
          document.getElementById('number').value='';  
      }
+    
