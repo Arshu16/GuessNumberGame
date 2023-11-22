@@ -1,4 +1,4 @@
-const rannum=Math.floor(Math.random() *20) +1;
+let rannum=Math.floor(Math.random() *20) +1;
      let score=20;
      function guessing(){
         const numberinput=document.getElementById('number').value;
@@ -52,7 +52,7 @@ const rannum=Math.floor(Math.random() *20) +1;
      }
      const newgame=document.getElementById('reset');
      function reset() {
-         const rannum= Math.floor(Math.random() *20) +1;
+        rannum= Math.floor(Math.random() *20) +1;
          score=20;
          document.getElementById('result').innerHTML='please check number';
          document.getElementById('score').innerHTML=`score : ${score}`;
