@@ -49,6 +49,7 @@ let rannum=Math.floor(Math.random() *20) +1;
             Highscore=math.max(Highscore,score);
             score=20
         }
+        
      }
      const newgame=document.getElementById('reset');
      function reset() {
